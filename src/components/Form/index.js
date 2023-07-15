@@ -15,6 +15,7 @@ const Form = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [GUID, setGUID] = useState("");
   const [formHasError, setFormHasError] = useState(false);
+  const [formSucccess, setFormSuccess] = useState(false);
 
   const inputChangeHandler = (event) => {
     setGUID(event.target.value);
@@ -22,14 +23,17 @@ const Form = () => {
 
   const onSubmitHandler = (event) => {
     event.preventDefault();
+    setFormSuccess(false);
     setIsSubmitting(true);
 
     setTimeout(() => {
       setIsSubmitting(false);
 
       if (validateGUID(GUID)) {
+        setFormSuccess(true);
         setFormHasError(false);
       } else {
+        setFormSuccess(false);
         setFormHasError(true);
       }
     }, 2000);
@@ -56,6 +60,7 @@ const Form = () => {
       <Button
         isSubmitting={isSubmitting}
         formHasError={formHasError}
+        formSuccess={formSucccess}
         onClick={onSubmitHandler}
       />
     </form>

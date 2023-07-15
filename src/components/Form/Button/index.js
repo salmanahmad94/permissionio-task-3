@@ -5,7 +5,7 @@ import { faCheck, faArrowsRotate } from "@fortawesome/free-solid-svg-icons";
 
 import classes from "./Button.module.css";
 
-const Button = ({ onClick, isSubmitting, formHasError }) => {
+const Button = ({ onClick, isSubmitting, formSuccess }) => {
   return (
     <button
       disabled={isSubmitting}
@@ -14,7 +14,7 @@ const Button = ({ onClick, isSubmitting, formHasError }) => {
       type="submit"
       className={classes.Button}
     >
-      {!formHasError && (
+      {formSuccess && (
         <FontAwesomeIcon
           size="lg"
           icon={faCheck}
