@@ -1,0 +1,10 @@
+.rightWrapper {
+  background-color: blue;
+  width: 50%;
+
+  display: flex;
+  flex-flow: column;
+
+  border: 1px solid;
+  border-radius: 5px;
+}

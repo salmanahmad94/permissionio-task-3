@@ -1,9 +1,12 @@
 .container {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1080px;
 
   background-color: red;
-  height: 10px;
 
-  margin: auto;
+  margin: 20px auto 20px;
+
+  padding: 20px;
+
+  display: flex;
 }
