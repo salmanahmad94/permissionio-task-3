@@ -19,10 +19,14 @@
   margin-bottom: 0px;
 }
 
+.DescriptionLabel {
+  padding-left: 10px;
+}
+
 .ErrorLabel {
-  padding: 5px;
+  padding: 5px 10px;
   border-radius: 15px;
-  background: red;
+  background: #dc3545;
 
   margin-left: 20px;
 }
@@ -30,7 +34,8 @@
 .Input {
   background: #add8e6;
   border: 1px solid #add8e6;
-  border-radius: 10px;
+  border-radius: 15px;
 
   height: 30px;
+  padding-left: 10px;
 }

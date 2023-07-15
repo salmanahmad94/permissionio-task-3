@@ -1,14 +1,34 @@
 import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { faCheck, faArrowsRotate } from "@fortawesome/free-solid-svg-icons";
 
 import classes from "./Button.module.css";
 
-const Button = () => {
+const Button = ({ onClick, isSubmitting, formHasError }) => {
   return (
-    <button type="submit" className={classes.Button}>
-      <FontAwesomeIcon size="lg" icon={faCheck} className={classes.CheckMark} />{" "}
+    <button
+      disabled={isSubmitting}
+      formHasError={formHasError}
+      style={{ opacity: isSubmitting ? 0.5 : 1 }}
+      onClick={onClick}
+      type="submit"
+      className={classes.Button}
+    >
+      {!formHasError && (
+        <FontAwesomeIcon
+          size="lg"
+          icon={faCheck}
+          className={classes.CheckMarkIcon}
+        />
+      )}
+      {isSubmitting && (
+        <FontAwesomeIcon
+          size="lg"
+          icon={faArrowsRotate}
+          className={classes.RefreshIcon}
+        />
+      )}
       Submit
     </button>
   );

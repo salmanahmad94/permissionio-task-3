@@ -11,8 +11,15 @@
   position: relative;
 }
 
-.CheckMark {
+.CheckMarkIcon {
   color: #28a745;
+
+  position: absolute;
+  left: 15px;
+}
+
+.RefreshIcon {
+  color: black;
 
   position: absolute;
   left: 15px;
