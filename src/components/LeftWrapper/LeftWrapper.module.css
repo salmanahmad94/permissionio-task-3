@@ -1,8 +1,14 @@
-.leftWrapper {
-  background-color: yellow;
+.LeftWrapper {
   width: 50%;
 
   float: left;
 
   padding-right: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .LeftWrapper {
+    width: 100%;
+    padding-right: 0;
+  }
 }

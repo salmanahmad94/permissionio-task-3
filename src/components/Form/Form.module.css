@@ -2,8 +2,35 @@
   border: 1px solid;
   border-radius: 5px;
 
-  height: 40px;
-
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: white;
+}
+
+.Form > * {
+  margin-bottom: 20px;
+}
+
+.Form > *:last-child {
+  margin-bottom: 0px;
+}
+
+.ErrorLabel {
+  padding: 5px;
+  border-radius: 15px;
+  background: red;
+
+  margin-left: 20px;
+}
+
+.Input {
+  background: #add8e6;
+  border: 1px solid #add8e6;
+  border-radius: 10px;
+
+  height: 30px;
 }

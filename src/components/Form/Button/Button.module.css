@@ -1,0 +1,25 @@
+.Button {
+  width: 120px;
+  height: 30px;
+  border: none;
+  border-radius: 12px;
+
+  background-color: orange;
+
+  padding: 5px 10px;
+  text-align: center;
+  position: relative;
+}
+
+.CheckMark {
+  color: #28a745;
+
+  position: absolute;
+  left: 15px;
+}
+
+@media only screen and (max-width: 800px) {
+  .Button {
+    width: 200px;
+  }
+}

@@ -1,5 +1,4 @@
-.rightWrapper {
-  background-color: blue;
+.RightWrapper {
   width: 50%;
 
   display: flex;
@@ -7,4 +6,10 @@
 
   border: 1px solid;
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+  .RightWrapper {
+    display: none;
+  }
 }
