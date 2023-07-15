@@ -9,7 +9,6 @@ const Button = ({ onClick, isSubmitting, formHasError }) => {
   return (
     <button
       disabled={isSubmitting}
-      formHasError={formHasError}
       style={{ opacity: isSubmitting ? 0.5 : 1 }}
       onClick={onClick}
       type="submit"

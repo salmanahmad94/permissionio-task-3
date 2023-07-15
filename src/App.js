@@ -6,8 +6,6 @@ import RightWrapper from "./components/RightWrapper";
 import Form from "./components/Form";
 import TextBox from "./components/TextBox";
 
-import Mona from "./assets/mona.png";
-
 import "./App.css";
 
 function App() {
@@ -17,9 +15,7 @@ function App() {
         <Form />
         <TextBox />
       </LeftWrapper>
-      <RightWrapper>
-        <img src={Mona} alt="mona lisa" />
-      </RightWrapper>
+      <RightWrapper />
     </Layout>
   );
 }
