@@ -19,6 +19,9 @@
   margin-bottom: 0px;
 }
 
+.LabelsContainer {
+}
+
 .DescriptionLabel {
   padding-left: 10px;
 }
@@ -38,4 +41,16 @@
 
   height: 30px;
   padding-left: 10px;
+}
+
+@media only screen and (max-width: 425px) {
+  .LabelsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ErrorLabel {
+    margin-top: 10px;
+    margin-left: 0;
+  }
 }
